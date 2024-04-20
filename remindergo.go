@@ -89,6 +89,9 @@ func checkAndSendReminders(latitude, longitude float64) {
 	}
 }
 
+
+
+
 func calculateDistance(lat1, lon1, lat2, lon2 float64) float64 {
 	// Convert degrees to radians
 	lat1 = lat1 * math.Pi / 180
@@ -107,9 +110,9 @@ func calculateDistance(lat1, lon1, lat2, lon2 float64) float64 {
 }
 
 func sendReminderEmail(title, description string) error {
-	from := "From Email Here"      //Enter your 'from' email here
-	password := "xxxxxxxxxxxxxxxx" //Set up your app password and enter it here (NOTE: your regular gmail password may not work ;therefore create an app password)
-	to := "To Email Here"          //Enter your 'to' email here
+	from := "gagansl62004@gmail.com"
+	password := "txuxfigpbcqkizon"
+	to := "primal.music.6@gmail.com"
 	host := "smtp.gmail.com"
 	port := "587"
 	subject := "Reminder: " + title // Set the subject of the email
@@ -127,3 +130,4 @@ func sendReminderEmail(title, description string) error {
 	log.Printf("Reminder email sent: %s", title)
 	return nil
 }
+
