@@ -111,7 +111,7 @@ func calculateDistance(lat1, lon1, lat2, lon2 float64) float64 {
 
 func sendReminderEmail(title, description string) error {
 	from := "gagansl62004@gmail.com"
-	password := "txuxfigpbcqkizon"
+	password := ""
 	to := "primal.music.6@gmail.com"
 	host := "smtp.gmail.com"
 	port := "587"
